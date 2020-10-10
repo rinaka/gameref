@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="gameref"
+config/description="Projeto de referência mostrando algumas práticas a serem adotadas em nossos projetos."
+run/main_scene="res://src/TelaInicial/TelaInicial.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+ConfigInicial="*res://src/Globais/ConfigInicial.gd"
+
+[compression]
+
+formats/zstd/compression_level=6
+
+[display]
+
+window/size/width=640
+window/size/height=360
+window/size/resizable=false
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[locale]
+
+translations=PoolStringArray( "res://assets/traducoes/textos.pt.translation" )
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
